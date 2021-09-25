@@ -1,9 +1,190 @@
 <!DOCTYPE html>
-<html>
-    <head>
-    	<title>Nguyễn Hồng Phượng (1812829)</title>
-    </head>
-<script src=1.js></script>
+<html lang="en">
+<head>
+  <title>Nguyễn Hồng Phượng (1812829)</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <style>
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  }
+  #gap {
+    padding: 20px;
+  }
+  #gap-item {
+    padding: 10px;
+  }
+  </style>
+  <script src=1.js></script>
+</head>
 <body onload=sc()>
+  <div class="jumbotron text-center" style="margin-bottom:0">
+    <h1>My First Bootstrap 4 Page</h1>
+  </div>
+  
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <a class="navbar-brand" href="#"><img src="img/home.png"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="nav navbar-nav">
+          <li id= "gap" class="active"><a href="#">Home</a></li>
+          <li id= "gap"><a href="myweb.html">Web Demo</a></li>
+          <li id= "gap" class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Exercises</span> <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true"> <span class="nav-label">Lab01</span> <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                  <li id="gap-item"><a href="1.html">JavaScript 1</a></li>
+                  <li id="gap-item"><a href="2.html">JavaScript 2</a></li>
+                  <li id="gap-item"><a href="3.html">JavaScript 3</a></li>
+                  <li id="gap-item"><a href="jquery1.html">JQuery 1</a></li>
+                  <li id="gap-item"><a href="jquery2.html">JQuery 2</a></li>
+                  <li id="gap-item"><a href="jquery3.html">JQuery 3</a></li>
+                  </ul>
+              </ul>
+          </li>
+      </ul>
+    </div>  
+  </nav>
+
+<h2>Kết Quả</h2>
+<p id="ket_qua"></p>
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+  <!-- Section: Social media -->
+  <section
+    class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+  >
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Get connected with us on social networks:</span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-facebook-f" style="font-size: 200%"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-google"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="" class="me-4 text-reset">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3"></i>Trường Đại học Đà Lạt
+          <p>
+            Khoa Công nghệ thông tin
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Angular</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">React</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Vue</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Laravel</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="#!" class="text-reset">Pricing</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Settings</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Orders</a>
+          </p>
+          <p>
+            <a href="#!" class="text-reset">Help</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> 01 Phù Đổng Thiên Vương</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            1812829@dlu.edu.vn
+          </p>
+          <p><i class="fas fa-phone me-3"></i> + 84 9417 20317</p>
+          <p><i class="fas fa-print me-3"></i> + 84 8677 31720</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="https://github.com/phunz31/">github.com/phunz31</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
+
 </body>
 </html>
